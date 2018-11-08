@@ -8,7 +8,7 @@ class App extends Component {
 
   async componentDidMount() {
     try {
-      const res = await fetch('http://18.220.194.77/8000/api/');
+      const res = await fetch('http://18.220.194.77:8000/api/');
       const todos = await res.json();
       this.setState({
         todos
