@@ -56,6 +56,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ORIGIN_WHITELIST = (
+    '18.220.194.77'
+    'localhost:8000',
+)
+
 ROOT_URLCONF = 'todo_api.urls'
 
 TEMPLATES = [
