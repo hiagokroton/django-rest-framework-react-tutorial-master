@@ -6,6 +6,8 @@ class App extends Component {
     todos: []
   };
 
+
+
   async componentDidMount() {
     try {
       const res = await fetch('http://18.220.194.77:8000/api/');
@@ -23,7 +25,6 @@ class App extends Component {
       <div>
         {this.state.todos.map(item => (
           <div key={item.id}>
-            <h1>Hello World</h1>
             <h2>{item.title}</h2>
             <span>{item.description}</span>
           </div>
